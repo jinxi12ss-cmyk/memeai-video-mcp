@@ -1,0 +1,34 @@
+{
+  "name": "memeai-video-mcp",
+  "version": "0.1.0",
+  "description": "Discover public Meme AI Video rap templates and their official pages.",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://www.memeaivideo.com/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinxi12ss-cmyk/memeai-video-mcp.git"
+  },
+  "mcpName": "io.github.jinxi12ss-cmyk/memeai-video-mcp",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "memeai-video-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "20.19.43",
+    "typescript": "5.9.3"
+  }
+}
